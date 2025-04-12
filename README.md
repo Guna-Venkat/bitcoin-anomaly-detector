@@ -1,4 +1,4 @@
-# 🧠 Bitcoin Blockchain — Anomaly Detection
+# ₿ Bitcoin Blockchain — Anomaly Detection
 
 ### Detecting Anomalies in Bitcoin Transactions for Enhanced Fraud Detection & Security Insight
 
