@@ -89,3 +89,58 @@ bitcoin-anomaly-detection/
 ```
 
 ---
+
+## 🧪 5. Anomaly Detection Techniques Explored
+
+| Method                   | Idea Behind It                        | Best For                                     |
+|--------------------------|----------------------------------------|----------------------------------------------|
+| K-Means                 | Distance-based clustering              | Grouping similar transactions                |
+| DBSCAN                  | Density-based outlier detection        | Arbitrary-shaped clusters + outliers         |
+| Isolation Forest        | Anomaly isolation via tree paths       | High-dimensional, scalable detection         |
+| Local Outlier Factor    | Compare local density vs neighbors     | Subtle, local anomalies                      |
+| PCA / t-SNE / UMAP      | Dimensionality reduction for visualization | Visual pattern recognition             |
+
+---
+
+## 📈 6. Insights from EDA
+
+### 💡 Transaction Patterns
+- Most transactions fall under a certain threshold range (e.g., **0.01–1 BTC**).
+- **High-value transactions** are rare but critical — flagged for deeper inspection.
+
+### 💡 Fee Trends
+- Unusual spikes in transaction fees often **precede heavy network activity**.
+- Outliers in transaction fees may relate to **priority payments** or **money laundering behavior**.
+
+### 💡 Address Behavior
+- Certain wallets receive/send **high volumes at irregular times**.
+- Possible **bot behavior** or **mixing services** usage detected.
+
+---
+
+## 🔄 7. Evaluation Metrics
+
+| Metric           | Use Case                                  |
+|------------------|--------------------------------------------|
+| Silhouette Score | Evaluating clustering quality              |
+| Anomaly Scores   | Ranking transactions by severity           |
+| ROC/AUC (if labeled) | Measuring classifier detection performance |
+| Manual Validation | Case study on top flagged anomalies       |
+
+---
+
+## 🚀 8. Possible Future Enhancements
+
+- Integrate with **real-time APIs** to detect live suspicious transactions.
+- Connect flagged wallets to **known dark web or criminal addresses**.
+- Deploy a **dashboard for crypto analysts** to monitor activity.
+- Add **graph-based anomaly detection** using wallet-to-wallet links.
+
+---
+
+## ✨ 9. Inspiration & Relevance
+
+- **Crypto fraud** has caused billions in losses globally.
+- **Blockchain’s transparency** offers a unique chance to pre-empt risky activity.
+- This project brings **machine learning** into the hands of **blockchain security teams, auditors, and enthusiasts**.
+
